@@ -1,49 +1,86 @@
 body {
-    font-family: 'Arial', sans-serif; /* Explicitly set Arial with fallback */
-    color: #000;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
-    padding: 30px; /* Increased padding for better spacing */
-    line-height: 1.6; /* Improved readability with more line spacing */
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
 }
 
-h1, h2, h3, p, li {
-    font-size: 16px; /* Uniform size for all text */
-    margin: 10px 0; /* Consistent spacing between elements */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
-h1, h2, h3 {
-    font-weight: bold; /* Headings remain bold */
+h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 15px;
 }
 
 p, li {
-    font-weight: normal; /* Regular text for paragraphs and list items */
+    font-size: 14px;
+    margin: 5px 0;
 }
 
 ul {
-    padding-left: 25px; /* Slightly more padding for bullet points */
-    margin: 10px 0; /* Consistent spacing */
+    padding-left: 20px;
+    margin: 5px 0;
 }
 
-.section {
-    margin-bottom: 30px; /* More space between sections */
+a {
+    color: #1155cc;
+    text-decoration: none;
 }
 
-.contact {
-    margin-bottom: 15px; /* Extra space below contact info */
+a:hover {
+    text-decoration: underline;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-    body {
-        padding: 15px; /* Reduced padding for mobile */
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 100%;
     }
-    h1, h2, h3, p, li {
-        font-size: 14px; /* Smaller uniform size for mobile */
+    h1 {
+        font-size: 22px;
     }
-    ul {
-        padding-left: 20px; /* Slightly less padding for mobile */
+    h2 {
+        font-size: 16px;
     }
-    .section {
-        margin-bottom: 20px; /* Reduced section spacing for mobile */
+    h3 {
+        font-size: 14px;
+    }
+    p, li {
+        font-size: 12px;
     }
 }
