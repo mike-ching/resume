@@ -21,7 +21,7 @@ h1 {
     font-weight: 700;
     color: #000;
     margin-bottom: 10px;
-    /* Removed text-align: center; to left-align */
+    text-align: left; /* Explicitly set to left */
 }
 
 h2 {
